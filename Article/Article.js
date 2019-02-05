@@ -8,7 +8,6 @@ class Article {
       // create a reference to the ".expandButton" class. 
         this.expandButton = domElement.querySelector('.expandButton')
           console.log('SELECTED EXPAND BUTTONS:')
-          console.log(this.expandButton)
 
       // Using your expandButton reference, update the text on your expandButton to say "expand"
         this.expandButton.textContent = 'expand'
@@ -30,10 +29,10 @@ class Article {
 
   expandArticle(domElement) {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
-    console.log('TEST EXPAND ARTICLE:')
-    console.log(domElement.classList)
+    console.log('TEST EXPAND ARTICLE TOGGLE:')
+      console.log(domElement.classList)
     domElement.classList.toggle("article-open")
-    console.log(domElement.classList)
+      console.log(domElement.classList)
   }
 }
 
