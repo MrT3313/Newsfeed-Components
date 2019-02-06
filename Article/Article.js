@@ -24,7 +24,9 @@ class Article {
 
     // Set a click handler on the expandButton reference, calling the expandArticle method.
       console.log(this.expandButton)  
-      this.expandButton.addEventListener('click', this.expandArticle(domElement))
+      this.expandButton.addEventListener('click', () => {
+        this.expandArticle(domElement)
+      })
   }
 
   expandArticle(domElement) {
@@ -35,6 +37,7 @@ class Article {
       console.log(domElement.classList)
   }
 }
+
 
 /* START HERE: 
 
